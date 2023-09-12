@@ -1,0 +1,77 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Penesss = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+	
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.233766228, 0, 0.181176469, 0)
+Frame.Size = UDim2.new(0, 1094, 0, 541)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 541)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.970
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.327239484, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 549, 0, 55)
+TextLabel_2.Font = Enum.Font.Bodoni
+TextLabel_2.Text = "Darted X Apakole"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.182815358, 0, 0.153419599, 0)
+TextButton.Size = UDim2.new(0, 740, 0, 388)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "."
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Penesss.Name = "Penesss"
+Penesss.Parent = Frame
+Penesss.BackgroundColor3 = Color3.fromRGB(57, 29, 86)
+Penesss.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Penesss.BorderSizePixel = 0
+Penesss.Position = UDim2.new(0.182815358, 0, 0.26802218, 0)
+Penesss.Size = UDim2.new(0, 200, 0, 71)
+Penesss.Font = Enum.Font.SourceSans
+Penesss.Text = "Auto Parry"
+Penesss.TextColor3 = Color3.fromRGB(0, 0, 0)
+Penesss.TextScaled = true
+Penesss.TextSize = 14.000
+Penesss.TextWrapped = true
+Penesss.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()
+end)
